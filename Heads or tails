@@ -1,0 +1,16 @@
+from random import randint
+
+count = input("How many times do you want to flip a coin?")
+HoT = []
+num = 0
+
+while num < count:
+  coin = randint(1,2)
+  if coin == 1:
+    coin_val = "H"
+  elif coin == 2:
+    coin_val = "T"
+  HoT.append(coin_val)
+  num += 1
+
+print(HoT)

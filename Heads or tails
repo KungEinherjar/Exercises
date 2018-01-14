@@ -1,6 +1,6 @@
 from random import randint
 
-count = input("How many times do you want to flip a coin?")
+count = int(input("How many times do you want to flip a coin?"))
 HoT = []
 num = 0
 

@@ -1,0 +1,11 @@
+list1 = [1,100,2,200,-500000, 300, 343, -43, 52021, 320, 4320, 193]
+
+count = list1[0]
+
+for num in list1:
+  if num > count:
+    count = num
+  else:
+    continue
+
+print(count)

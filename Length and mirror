@@ -1,0 +1,11 @@
+list1 = ['abc', 'xyz', 'aba', '1221', "22", "a234567a", "qweerty"]
+
+count = 0
+
+for str in list1:
+  if len(str) >= 2 and str[0] == str[-1]:
+    count += 1
+  else:
+    continue
+
+print(count)

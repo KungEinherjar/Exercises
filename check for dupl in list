@@ -1,0 +1,16 @@
+def list_dup_remove(list):
+  
+  new_list = []
+  
+  for item in list:
+    if item in new_list:
+      continue
+    else:
+      new_list.append(item)
+      
+  print(new_list)
+  
+
+list1 = [1,1,2,3,1,-2,100,5]
+
+list_dup_remove(list1)

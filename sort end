@@ -1,0 +1,17 @@
+def list_tup_sort(list):
+  
+  new_list = []
+  
+  for count in range(10):
+    for tup in list:
+      if tup[1] == count:
+        new_list.append(tup)
+      else:
+        continue
+  
+  print(new_list)
+
+
+list1 =  [(2, 5), (1, 2), (4, 4), (2, 3), (2, 1)]
+
+list_tup_sort(list1)

@@ -1,0 +1,8 @@
+def listcheck(list1):
+  empty = []
+  if list1 == empty:
+    print("List is empty.")
+  else:
+    print("List has items.")
+  
+listcheck([5])

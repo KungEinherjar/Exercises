@@ -1,0 +1,13 @@
+def length_check(list, n):
+  new_list = []
+  
+  for item in list:
+    if len(str(item)) > n:
+      new_list.append(item)
+    else:
+      continue
+  
+  print(new_list)
+  
+list1 = [11,111,1111,11111,1,11,111]
+length_check(list1, 2)

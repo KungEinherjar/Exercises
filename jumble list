@@ -1,0 +1,10 @@
+def jumble_list(list1):
+  import random
+  
+  new_list = random.sample(list1,len(list1))
+  
+  print(new_list)
+  
+list = [1,2,3,4,'five']
+
+jumble_list(list)

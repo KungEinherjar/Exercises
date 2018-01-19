@@ -1,0 +1,23 @@
+def both_lists(list1, list2):
+  
+  result = False
+  
+  for item1 in list1:
+    for item2 in list2:
+      if item1 ==  item2:
+        result = True
+        return result
+
+'''
+    if result == True:
+      return result
+      break
+    else:
+      result = False
+      return result
+'''
+
+listA = [1,2,3]
+listB = [3,4,5,6]
+
+print(both_lists(listA, listB))

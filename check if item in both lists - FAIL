@@ -1,0 +1,25 @@
+def both_lists(list1, list2):
+  
+  # chech = False
+  
+  for item1 in list1:
+    
+    global go
+    
+    for item2 in list2:
+      if item1 == item2:
+        return True
+        go = 1
+        break
+      else:
+        go = 0
+        continue
+    if go == 1:
+      break
+    else:
+      return False
+
+listA = [1,2,3]
+listB = [3,4,5,6]
+
+print(both_lists(listA, listB))

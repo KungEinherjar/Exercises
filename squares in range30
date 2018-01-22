@@ -1,0 +1,5 @@
+def squares():
+  list1 = [x**2 for x in range(1,31)]
+  print(str(list1[0:5]) + ", ..., " + str(list1[-5:]))
+
+squares()

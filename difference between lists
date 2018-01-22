@@ -1,0 +1,12 @@
+def difference(list1,list2):
+  if len(list2) > len(list1):
+    diff_list = list(set(list2)-set(list1))
+  else:
+    diff_list = list(set(list1)-set(list2))
+  
+  print(sorted(diff_list))
+
+list_x = [1,2,3,4,6]
+list_y = [100,1,2,3,4,5,6,7,7,8]
+
+difference(list_y,list_x)

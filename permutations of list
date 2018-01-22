@@ -1,0 +1,8 @@
+def permutations(list1):
+  import itertools
+  
+  print(list(itertools.permutations(list1, len(list1))))
+
+list_x = [1,2,3,4]
+
+permutations(list_x)

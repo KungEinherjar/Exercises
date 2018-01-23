@@ -1,0 +1,12 @@
+list1 = [1,2,3,4,5,4,4,410,3,111,3,11,100]
+
+new_list = []
+
+for item in list1:
+  
+  if item % 2 != 0:
+    new_list.append(item)
+  else:
+    continue
+  
+print(new_list)

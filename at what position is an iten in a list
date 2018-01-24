@@ -1,0 +1,15 @@
+def where(list,item):
+  count = 0
+  
+  for list_item in list:
+    if list_item == item:
+      break
+    else:
+      count += 1
+      continue
+
+  print('Your item is number: {0}'.format(count+1))
+
+list1 = ['hej','er','jopp']
+
+where(list1,'er')

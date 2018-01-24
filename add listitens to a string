@@ -1,0 +1,8 @@
+a = ['h','e','j']
+
+new = ''
+
+for it in a:
+  new += str(it)
+
+print(new)

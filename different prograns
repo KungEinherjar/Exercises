@@ -1,0 +1,125 @@
+'''
+# add lists together
+
+list1 = [1,2,3]
+list2 = [4,5,6]
+
+list3 = list1 + list2
+
+print(list3)
+
+##
+# random item in list
+
+import random
+
+print(list3[random.randint(0,len(list3))])
+
+##
+'''
+
+'''
+# Compare two lists to each other
+
+lista = [10, 10, 0, 0, 10]
+listb = [10, 10, 10, 0, 0]
+listd = [1, 10, 10, 0, 0]
+
+print('Compare lista and listb.')
+print(' '.join(map(str, listb)) in ' '.join(map(str, lista*2)))
+print('Compare lista and listd.')
+print(' '.join(map(str, listd)) in ' '.join(map(str, lista*2)))
+'''
+
+'''
+# two smallest items in a list - hard method
+
+def secSmallest(list_here):
+  list_small = []
+  
+  for item in list_here:
+    if item == list_here[0]:
+      list_small.append(item)
+    elif item == list_here[1]:
+      if item > list_small[0]:
+        list_small.append(item)
+    else:
+      if item < list_small[0]:
+        list_small.insert(0,item)
+        list_small.remove(list_small[2])
+      elif item < list_small[1]:
+        list_small.insert(1,item)
+        list_small.remove(list_small[2])
+      else:
+        continue
+  
+  print(list_small)
+  print(list_small[1])
+    
+  
+
+
+list4 = [1,2,3,4,5,6,7,8,9,0.5,0.2,100,20,0.111,0.125]
+
+secSmallest(list4)
+'''
+
+'''
+# two smallest items in a list
+
+def secSmallest2(list_here):
+  print(list(sorted(list_here)))
+  print(list(sorted(list_here))[1])
+
+
+secSmallest2(list4)
+'''
+
+'''
+# second largest item in a list
+
+def secSmallest3(list_here):
+  print(list(sorted(list_here)))
+  print(list(sorted(list_here))[-2])
+
+list4 = [1,2,3,4,5,6,7,8,9,0.5,0.2,100,20,0.111,0.125]
+secSmallest3(list4)
+'''
+
+
+'''
+# Unique items in a list
+
+my_list = [10, 20, 30, 40, 20, 50, 60, 40]
+print("Original List : ",my_list)
+new_set = set(my_list)
+new_list = list(sorted(new_set))
+print("Unique items : ",new_list)
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+'''
+# Compare two lists to each other - copy
+print('Compare lista and listb')
+print(' '.join(map(str, listb)) in ' '.join(map(str, lista * 2)))
+print('Compare lista and listd')
+print(' '.join(map(str, listd)) in ' '.join(map(str, lista * 2)))
+
+'''

@@ -1,0 +1,11 @@
+list1 = [1,1,2,3,'horse','horse']
+
+def freq(list,key):
+  count = 0
+  for item in list:
+    if item == key:
+      count += 1 
+  
+  print('Your key exists this many times:', count)
+
+freq(list1,'horse')

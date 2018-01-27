@@ -1,0 +1,5 @@
+list1 = [1,1,2,3,'horse','horse']
+
+import collections
+
+print(collections.Counter(list1))
